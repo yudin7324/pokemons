@@ -1,4 +1,42 @@
 .card {
-  background: $color-blue;
+  background-color: $color-blue;
   font-weight: 700;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 1px solid $color-snow;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-green;
+    // filter: brightness(2);
+
+    .card__title {
+      color: $color-blue;
+    }
+  }
+
+  &__title {
+    font-size: 32px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $color-snow;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__content {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__img {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+  }
+
+
 }

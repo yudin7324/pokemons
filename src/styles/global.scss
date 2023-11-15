@@ -213,3 +213,10 @@ img[data-object-fit="cover"] { object-fit: cover }
     padding: 0 10px;
   }
 }
+
+.button {
+  padding: 8px 24px;
+  border-radius: 8px;
+  background-color: $color-violet;
+  cursor: pointer;
+}
