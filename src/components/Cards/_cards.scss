@@ -1,6 +1,48 @@
 .cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 20px;
-  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-grow: 1;
+  padding: 50px 0 200px 0;
+
+  &__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 25px;
+    width: 100% ;
+    height: 100%;
+    align-items: flex-start;
+    flex-grow: 1;
+  }
+
+  &__input {
+    font-size: 20px;
+    align-self: flex-start;
+    border: 2px solid $color-snow;
+    color: $color-snow;
+    border-radius: 30px;
+    padding: 12px 24px;
+    margin-bottom: 50px;
+
+    &::placeholder {
+      color: $color-snow;
+    }
+  }
+
+  &__more-btn {
+    font-size: 20px;
+    background-color: $color-violet;
+    padding: 12px 24px;
+    border-radius: 8px;
+    align-self: center;
+    cursor: pointer;
+    margin-top: 50px;
+  }
+
+  &__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
