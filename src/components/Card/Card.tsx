@@ -4,8 +4,8 @@ import './_сard.scss';
 import { useGetPokemonByNameQuery } from '../../services/pokemon';
 import Loader from '../Loader/Loader';
 import { PokemonType } from '../../types/Pokemons';
-import { ReactSVG } from 'react-svg'
-import background from '../../images/card-bg.svg'
+// import { ReactSVG } from 'react-svg'
+// import background from '../../images/card-bg.svg'
 interface CardProps {
   name: string
 }
